@@ -6,13 +6,12 @@
     <title>Rolling Stones - Tours y Fechas</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"></link>
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert"></script>
 
 
 </head>
 <body class="font[Poppons] text-white">
  
-    
 <div>
     <div class="bg-no-repeat bg-cover bg-fixed max-h-fit" style="background-image: url(img/bg-01.jpg);"> 
     
@@ -36,26 +35,10 @@
                         <i class="bi bi-calendar2-week-fill m-5">  2024-04-26, 20:00hs</i>
                     </span> 
                     <span class="">
-                    <i class="bi bi-geo-alt-fill">  Movistar Arena  |  Humbolt 2222, Buenos Aires</i>
+                    <i class="bi bi-geo-alt-fill">  Las Vegas</i>
                     </span> 
-                    <span class="">
-                        <button type="button" class="text-white bg-green-900 hover:bg-green-400 text rounded-xl px-2 py-2 m-5"><i class="bi bi-ticket-perforated-fill"></i> Comprar ticket</button>
-                    </span> 
-                </li>
-            </ul>
-
-
-            <ul class="list-none bg-gray-700 rounded-3xl justify-center content-center mb-6">
-    
-                <li class="flex justify-between content-center h-[50px] items-center ">
-                    <span class="">
-                        <i class="bi bi-calendar2-week-fill m-5">  2024-04-26, 20:00hs</i>
-                    </span> 
-                    <span class="">
-                    <i class="bi bi-geo-alt-fill">  Movistar Arena  |  Humbolt 2222, Buenos Aires</i>
-                    </span> 
-                    <span class="">
-                        <button type="button" class="text-white bg-green-900 hover:bg-green-400 text rounded-xl px-2 py-2 m-5"><i class="bi bi-ticket-perforated-fill"></i> Comprar ticket</button>
+                    <span class="spanboton">
+                        <button type="button" id="LasVegas" data-lugar="LasVegas" onclick="getTickets('Las Vegas')" class="buyclass text-white bg-green-900 hover:bg-green-400 text rounded-xl px-2 py-2 m-5"><i class="bi bi-ticket-perforated-fill"></i> Comprar ticket</button>
                     </span> 
                 </li>
             </ul>
@@ -68,16 +51,78 @@
                         <i class="bi bi-calendar2-week-fill m-5">  2024-04-26, 20:00hs</i>
                     </span> 
                     <span class="">
-                    <i class="bi bi-geo-alt-fill">  Movistar Arena  |  Humbolt 2222, Buenos Aires</i>
+                    <i class="bi bi-geo-alt-fill">  Tokyo</i>
                     </span> 
                     <span class="">
-                        <button type="button" class="text-white bg-green-900 hover:bg-green-400 text rounded-xl px-2 py-2 m-5"><i class="bi bi-ticket-perforated-fill"></i> Comprar ticket</button>
+                        <button type="button" id="Tokyo" onclick="getTickets('Tokyo')" data-lugar="Tokyo" class="buyclass text-white bg-green-900 hover:bg-green-400 text rounded-xl px-2 py-2 m-5"><i class="bi bi-ticket-perforated-fill"></i> Comprar ticket</button>
                     </span> 
                 </li>
             </ul>
 
 
-         
+            <ul class="list-none bg-gray-700 rounded-3xl justify-center content-center mb-6">
+    
+                <li class="flex justify-between content-center h-[50px] items-center ">
+                    <span class="">
+                        <i class="bi bi-calendar2-week-fill m-5">  2024-04-26, 20:00hs</i>
+                    </span> 
+                    <span class="">
+                    <i class="bi bi-geo-alt-fill">  Brisbane</i>
+                    </span> 
+                    <span class="">
+                        <button type="button" id="Brisbane" onclick="getTickets('Brisbane')" data-lugar="Brisbane" class="buyclass text-white bg-green-900 hover:bg-green-400 text rounded-xl px-2 py-2 m-5"><i class="bi bi-ticket-perforated-fill"></i> Comprar ticket</button>
+                    </span> 
+                </li>
+            </ul>
+
+
+            <ul class="list-none bg-gray-700 rounded-3xl justify-center content-center mb-6">
+    
+                <li class="flex justify-between content-center h-[50px] items-center ">
+                    <span class="">
+                        <i class="bi bi-calendar2-week-fill m-5">  2024-04-26, 20:00hs</i>
+                    </span> 
+                    <span class="">
+                    <i class="bi bi-geo-alt-fill">  Inglewood</i>
+                    </span> 
+                    <span class="">
+                        <button type="button" id="Inglewood" data-lugar="Inglewood" onclick="getTickets('Inglewood')" data-lugar="Inglewood" class="buyclass text-white bg-green-900 hover:bg-green-400 text rounded-xl px-2 py-2 m-5"><i class="bi bi-ticket-perforated-fill"></i> Comprar ticket</button>
+                    </span> 
+                </li>
+            </ul>
+
+
+            <ul class="list-none bg-gray-700 rounded-3xl justify-center content-center mb-6">
+    
+                <li class="flex justify-between content-center h-[50px] items-center ">
+                    <span class="">
+                        <i class="bi bi-calendar2-week-fill m-5">  2024-04-26, 20:00hs</i>
+                    </span> 
+                    <span class="">
+                    <i class="bi bi-geo-alt-fill">  Auckland</i>
+                    </span> 
+                    <span class="">
+                        <button type="button" id="Auckland" onclick="getTickets('Auckland')" data-lugar="Auckland" class="buyclass text-white bg-green-900 hover:bg-green-400 text rounded-xl px-2 py-2 m-5"><i class="bi bi-ticket-perforated-fill"></i> Comprar ticket</button>
+                    </span> 
+                </li>
+            </ul>
+
+
+            <ul class="list-none bg-gray-700 rounded-3xl justify-center content-center mb-6">
+    
+                <li class="flex justify-between content-center h-[50px] items-center ">
+                    <span class="">
+                        <i class="bi bi-calendar2-week-fill m-5">  2024-04-26, 20:00hs</i>
+                    </span> 
+                    <span class="">
+                    <i class="bi bi-geo-alt-fill">  Dunedin</i>
+                    </span> 
+                    <span class="">
+                        <button type="button" id="Dunedin" onclick="getTickets('Dunedin')" data-lugar="Dunedin" class="buyclass text-white bg-green-900 hover:bg-green-400 text rounded-xl px-2 py-2 m-5"><i class="bi bi-ticket-perforated-fill"></i> Comprar ticket</button>
+                    </span> 
+                </li>
+            </ul>
+
 
         
 
@@ -160,8 +205,7 @@
     </div>
         
 </div>      
-
+<script src="tour.js"></script>
 </body>
-
 </html>
 
