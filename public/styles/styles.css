@@ -1,0 +1,15 @@
+.album {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+}
+
+.favorite-icon {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  font-size: 50px; 
+  color: #ffbf00; 
+  cursor: pointer;
+  text-shadow: 3px 3px 3px black;
+}
