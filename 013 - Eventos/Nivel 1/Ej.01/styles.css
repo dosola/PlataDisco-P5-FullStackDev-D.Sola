@@ -1,0 +1,25 @@
+#magia {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 600px;
+  height: 300px;
+  background: transparent;
+  border-color: red solid 2px;
+  padding: 10px;
+  z-index: 9999;
+}
+
+#contenido {
+  position: relative;
+}
+
+#contenido img {
+  transition: opacity 0.5s ease;
+  width: 600px;
+  height: auto;
+}
+
+#magia:hover ~ #contenido img {
+  opacity: 0;
+}
