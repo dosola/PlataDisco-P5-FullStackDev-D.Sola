@@ -1,0 +1,124 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(230, 230, 230);
+}
+
+
+
+h1 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    /* Puedes ajustar el tamaño, el peso y otros estilos según sea necesario */
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 2px solid red;
+    width: 30%;
+    padding-bottom: 5px ;
+
+
+
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: grey;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+    padding-bottom: 5px ;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(141, 141, 141);
+    padding-left: 10%;
+    padding-right: 10%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
+
+}
+
+
+
+
+title {
+    text-transform: uppercase;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+}
+
+.containercard{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.card{    
+    border: solid 1px gainsboro;
+    width: 500px;
+    background-color: white;
+}
+
+
+
+.cardpic{
+    width: 100%;
+}
+
+
+
+.nombre{ 
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    font-weight: bold;
+    padding-bottom: 10px;
+
+}
+
+.descripcion{
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    font-weight: lighter;
+    padding-bottom: 10px;
+}
+
+
+
+.icono_rrss{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   
+}
+
+
+.Landing{
+background-color: aqua;
+margin-top: 200px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    
+    }
+
+.item{
+    width: 20%;
+    height: 20%;
+    margin: 30px;
+
+}
+

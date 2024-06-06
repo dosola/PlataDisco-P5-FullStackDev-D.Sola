@@ -1,0 +1,150 @@
+
+
+/* 1--) 
+Dale al elemento <body> un background-color de #3D5A80, 
+una familia tipográfica Verdana y un color de letra #f7ede2.*/
+body{
+    background-color: #3d5a80;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal solid #f7ede2;
+}
+
+/* 2--)   
+Hacé que el elemento <h1> sea color rgb 238, 108, 77.*/
+h1{
+    color: rgb (238,108,77);
+}
+
+
+/* 3--)   
+Dale al <h2> un color celeste: #E0FBFC.*/
+h2{
+    color: #E0FBFC;
+}
+
+
+/* 4--)   
+Hacé que todos los elementos <li> sean blancos. 
+Elegí la tonalidad en Coolors.*/ 
+li{
+    color: #ffffff;
+}
+
+/* 5--)
+Al elemento con ID 'bordeado', generale un borde de
+ 3px solid white;*/
+#bordeado{
+    border: 3px solid white;
+    }
+
+/* 6--)
+A los elementos con Clase "aloha" dales 
+    un fondo #293241 y un color de texto blanco.*/
+.aloha{
+    background-color: #293241;
+    color: #ffffff;
+}
+
+
+/* 7--)
+Dale a todos los input un borde de 
+este tipo: 2px dashed rgb 238, 108, 77.*/
+input{
+    border: 2px dashed rgb (238,108,77);
+}
+
+
+
+/* 8--)
+Hacé que los <p> que están adentro de un <div> tengan la 
+tipografía un 150% más grande y un color de texto #98C1D9.*/
+
+p div{
+font-size : 150%;
+color: #98C1D9;
+}
+
+
+/* 9--)
+Lográ que los input con type="text" tengan un fondo celeste. */
+input[type="text"] {
+    background-color: lightblue; 
+}
+
+
+
+
+
+
+/*
+************* Extra Credit ***********************
+Para completar el extra-credit, deberás buscar los selectores en internet. Si lo lográs, sos #CasiHacker.
+*/
+
+
+/* 1-)
+Hacé que los <a> que fueron visitados se pongan color
+ blanco y que el link se abra en una pestaña nueva.
+*/
+a:visited {
+color: white;
+}
+
+a[target="_blank"]:visited{
+color:white;
+}
+
+
+
+/* 2-)
+Dale un fondo azul a los <p> que estén dentro del tercer 
+<div>. Pista: buscá el selector :nth-of-type. */
+
+div:nth-of-type(3) p {
+    background-color: blue;
+}
+
+
+/* 3-)
+Dale un borde blanco de 4px al segundo <p> que está dentro 
+del tercer <div>. */
+div:nth-of-type(3) p:nth-of-type(2) {
+    border: 4px solid white;
+}
+
+
+
+/* 4-)
+Hacé que el <span> dentro del tercer <div> tenga 
+fondo blanco.*/
+div:nth-of-type(3) span {
+    background-color: white;
+}
+
+
+/* 5-)
+Hacé que todos los checkbox que están clickeados tengan un 
+margen a la izquierda (margin-left: 60px;).*/
+input[type="checkbox"]:checked {
+    margin-left: 60px;
+}
+
+
+/* 6-)
+Hacé que todos los _tag_s <label> estén en mayúscula 
+usando únicamente CSS. Pista: mayúscula en inglés se dice 
+uppercase.*/
+label {
+    text-transform: uppercase;
+}
+
+
+/* 7-)
+Hacé que la primera letra del elemento con ID 'ultimo' 
+tenga un font-size de 300% y background naranja.*/
+
+#ultimo::first-letter {
+    font-size: 300%;
+    background-color: orange;
+}
+

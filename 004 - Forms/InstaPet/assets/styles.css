@@ -1,0 +1,52 @@
+.TITULO {
+    font-size: 50px;
+    color: darkorange;
+    justify-content: center;
+    margin: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow:2px 2px seagreen;
+}
+
+.divtitulo {
+
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+    width: 475px;
+    align-self: auto;   
+    margin: auto;
+    background-image: url("bk01.jpg");
+    background-position: bottom;
+    height: 475px;
+
+}
+
+
+
+
+p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    font-size: 12px;
+    background-color: whitesmoke;
+}
+
+.divform {
+    justify-content: center;
+    text-align: center;
+    width: 400px;
+    margin: auto;
+    background-color: whitesmoke;    
+    opacity: 80%;
+    padding: 10px;
+    border-radius: 5px;
+}
+  
+
+body {
+    background-color: beige;
+}
+
+iframe {
+    border-radius: 15px;
+}
+

@@ -1,0 +1,74 @@
+div {
+display: flex;
+color: black;
+height: 40px;
+margin: 0px auto;
+border-radius: 80px;
+animation-duration: 3s;
+animation-name: slidein;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+}
+
+
+.div1 {
+    
+background-color: rgb(243, 197, 141);
+border-bottom: 8px solid rgb(201, 141, 93);
+border-end-end-radius: 20px;
+border-end-start-radius: 20px;
+width: 600px;
+}
+
+.div2 {
+ background-color: rgb(219, 85, 85);
+ width: 650px;
+}
+
+
+.div3 {
+    
+    background-color: rgb(243, 197, 141);
+    border-top: 7px solid rgb(201, 141, 93);
+    border-start-start-radius: 20px;
+    border-start-end-radius: 20px;
+    width: 600px;
+    }
+
+.div4 {
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    background-color: white;
+    padding-top: 40px;
+}
+
+.div5 {
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    background-color: white;
+}
+
+.div6 {
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    background-color: white;
+    font-weight: bolder;
+}
+
+
+
+    @keyframes slidein {
+        from {
+          margin-left: 100%;
+          width: 50%;
+        }
+      
+        to {
+          margin-left: 0%;
+          width: 50%;
+        }
+      }
+

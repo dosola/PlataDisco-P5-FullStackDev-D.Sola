@@ -1,0 +1,46 @@
+div
+{
+    height: 150px;
+    border: solid;
+    border-color: #092454 3px;
+}
+
+
+#uno
+{
+    position: static;
+    background-color: #e59ef270;
+    top: 50px;
+    left: 100px;
+}
+
+#dos
+{
+    position: relative;
+    background-color: #62d0ff7c;
+}
+
+#tres
+{
+    
+    position: fixed;
+    background-color: #ced5db;
+
+}
+
+#cuatro
+{
+    position: relative;
+    background-color: #85e38d;
+    width: ;
+}
+
+#cinco
+{
+background-color: #d3c200;
+width: 25%;
+height: 25%;
+position: absolute;
+top: 30px;
+left: 15px;
+}
