@@ -1,0 +1,14 @@
+
+let numero1;
+let acumulador = 1;
+let contador = 1;
+
+
+numero1 = prompt("Ingrese un número...");
+
+while (contador <= numero1) {
+    acumulador *= contador;
+    contador++;
+}
+
+alert("El producto acumulado de los enteros positivos entre 1 y " + numero1 + " es: " + acumulador);

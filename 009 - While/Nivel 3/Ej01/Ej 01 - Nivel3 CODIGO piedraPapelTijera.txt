@@ -1,0 +1,41 @@
+let eleccionDelUsuario = "";
+let numeroAlAzar;
+let eleccionComputadora = "";
+let pregunta = "si";
+
+while (pregunta == "si")
+{
+eleccionDelUsuario = prompt("Elige: Piedra, Papel o Tijera").toLowerCase();
+alert("La elección del usuario es " + eleccionDelUsuario);
+
+numeroAlAzar = Math.floor(Math.random() * 3) + 1;;
+
+if (eleccionDelUsuario !== "piedra" && eleccionDelUsuario !== "papel" && eleccionDelUsuario !== "tijera") 
+{
+alert("Por favor, ingresa una opción válida: Piedra, Papel o Tijera.");
+}
+
+if (numeroAlAzar == 1){
+eleccionComputadora = "piedra";
+} 
+else if (numeroAlAzar == 2){
+eleccionComputadora = "papel";
+}
+else { 
+eleccionComputadora = "tijera";
+}
+
+alert("El usuario eligió: " + eleccionDelUsuario + "      La Computadora eligió: " + eleccionComputadora);
+
+if (eleccionDelUsuario === eleccionComputadora) {
+alert(" Es un empate ");
+} else if ( (eleccionDelUsuario === "piedra" && eleccionComputadora === "tijera") || (eleccionDelUsuario === "papel" && eleccionComputadora === "piedra") || (eleccionDelUsuario === "tijera" && eleccionComputadora === "papel")) {
+alert("Ganaste !!!");
+} else {
+ alert("La computadora gana !");
+}
+pregunta = prompt("Desea juagar otra vez?").toLowerCase();
+}
+alert("Respondió que no quiere jugar otra vez, que tenga buenos días.");
+
+
